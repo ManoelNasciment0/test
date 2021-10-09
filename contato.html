@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela da Contato</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<p>RESTAURANTE START</p>
+    <h3>ENTRE EM CONTATO</h3>
+    <form name="form_contact">
+    <label for="nome">Nome </label><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value=""><br><br>
+    <label for="email">Email </label><br>
+    <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+    <label for="telefone">Telefone</label><br>
+    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone"><br><br>
+    <label for="assunto">Assunto</label><br>
+    <select id="assunto">
+        <option value="">Selecione...</option>
+        <option value="1">Elogios</option>
+        <option value="2">Dúvidas</option>
+        <option value="3">Reclamações</option>
+        <option value="4">Sugestões</option>
+    </select><br><br>
+    <label for="mensagem">Mensagem</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Enviar" onclick="return validar_form_contact()">
+</form>
+</div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+    <script src="script1.js"></script>
+</body>
+</html>

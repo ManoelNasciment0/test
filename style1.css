@@ -1,0 +1,18 @@
+p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    margin: auto;
+    color: blue;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: url(img/vista-frontal-do-restaurante-do-estilo-dos-desenhos-animados_134830-719.jpg);
+    background-attachment:scroll;
+    background-position: center;
+    height: 1000px;
+    margin-bottom: -500px;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Reservas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Reservas</h1>
+    <div id="main-container">       
+        <form name="form_reserv">
+            <fieldset id="large">
+                <h4 id="reservar">Reservar uma mesa</h4>
+                <div class="full-box">
+                    <label for="data">Data: </label><input type="date" id="data" name="data"><br><br>
+                    <label for="appt">Hora:</label>
+                    <input type="time" id="hora" name="appt" min="09:00" max="18:00"><br><br>
+                    <label for="pessoas">Pessoas:</label>
+                    <select id="pessoas">
+                        <option value="">Quantidade de Pessoas</option>
+                        <option value="1">Uma Pessoa</option>
+                        <option value="2">Duas Pessoas</option>
+                        <option value="3">Três Pessoas</option>
+                        <option value="4">Quatro Pessoas</option>
+                        <option value="5">Cinco Pessoas</option>
+                        <option value="6">Seis Pessoas</option>
+                    </select><br>
+                    <h4>Contato Principal</h4>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value=""><br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+                    <input type="checkbox" name="agreement" id="agremeent">
+                    <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de
+                            uso</a></label><br><br>
+                    <input class="butao" type="submit" value="Salvar" onclick="return validar_form_reserv(), confirm_form_reserv()">
+                    <input class="butao" type="submit" value="Cancelar" onclick="return cancelar_form_reserv()">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
